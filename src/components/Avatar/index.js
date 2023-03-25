@@ -1,7 +1,7 @@
 const Avatar = (props) => {
     return (
         <div className="avatar">
-            <div className="w-40 rounded-full">
+            <div className="max-w-xs rounded-full">
                 <img src={props.src} alt={props.alt} />
             </div>
         </div>

@@ -8,28 +8,28 @@ const Sidebar = (props) => {
     const menuItems = [
         {
             name: 'Experiências',
-            icon: 'briefcase',
-            href: '#'
+            icon: 'fa-solid fa-briefcase',
+            href: '#works'
+        },
+        {
+            name: 'Graduação & Cursos',
+            icon: 'fa-solid fa-graduation-cap',
+            href: '#graduation'
         },
         {
             name: 'Projetos',
-            icon: 'laptop',
-            href: '#'
-        },
-        {
-            name: 'Graduações',
-            icon: 'graduation-cap',
-            href: '#'
+            icon: 'fa-solid fa-laptop',
+            href: '#projects'
         },
         {
             name: 'Contato',
-            icon: 'phone',
-            href: '#'
+            icon: 'fa-solid fa-envelope',
+            href: '#contact'
         }
     ]
 
     return (
-        <div className='sidebar bg-base-300 w-max h-screen flex flex-col'>
+        <div className={`sidebar bg-base-300 w-max h-screen flex flex-col ${props.className}`}>
             <div className='menu-avatar self-center px-8 pt-8 pb-2'>
                 <Avatar src='https://github.com/igorfloresdev.png' alt='Igor Flores' />
                 <h1 className='uppercase text-center text-xl pt-2'>{props.title}</h1>
